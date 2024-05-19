@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #4181e2, #9b3fd5);
+
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+}
+
+input[type="text"] {
+    width: 250px; /* Ancho fijo para todos los campos de entrada */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Agrega un espacio entre los campos de entrada */
+    border: 1px solid #7a0f8f;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten al ancho del campo */
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #6b4caf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #26201e;
+}
+
+img{
+    width: 20%;
+    border: 0%;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #6b4caf;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

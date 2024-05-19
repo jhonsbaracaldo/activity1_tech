@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Instructor</title>
+</head>
+<body>
+  <section>
+    <form id="FormInstructor">
+      <h1>Registrar Instructor</h1>
+      <label for="name">Nombre</label>
+      <input type="text" id="name" required>
+      <label for="lastname">Apellido</label>
+      <input type="text" id="lastname" required>
+      <label for="cursos">Curso que va a dictar</label>
+      <select id="cursos" required></select>
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <section>
+    <h1>Lista de Instructores</h1>
+    <div id="instructorList"></div>
+  </section>
+
+  <script type="module" src="../service/instructoregister.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/course.css">
+    <title>Registrar Cursos</title>
+</head>
+<body>
+    <section>
+        <form id="formulario">
+            <h1>Registrar Cursos</h1>   
+            <img src="../imagen/Best-online-course-platforms.webp" alt="imagen">
+            <label>Titulo:</label>
+            <input type="text" id="titulo" required>
+            <label>Descripcion:</label>
+            <input type="text" id="descripcion">
+            <label>Duracion:</label>
+            <input type="text" id="duracion">
+
+            <section class="list-section">
+                <h1>Lista de Cursos</h1>
+                <ul id="courseList"></ul>
+            </section>
+            
+            <section>
+            <button type="submit" onclick="saveCourse()"> Registrar</button>
+            <button type="submit">Lista de cursos</button>
+        </section>
+        </form>
+    </section>
+
+    <script src="../interactive/course.js" type="module"></script>
+    <script src="../service/registerCourse.js" type="module"></script>
+
+</body>
+</html>
