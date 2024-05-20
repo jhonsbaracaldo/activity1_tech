@@ -1,12 +1,12 @@
 
-document.getElementById('registerCourse').addEventListener('click', () => {
-    window.location.href = 'register_course.html'; 
+document.getElementById('Course').addEventListener('click', () => {
+    window.location.href = 'course.html'; 
 });
 
-document.getElementById('registerStudent').addEventListener('click', () => {
-    window.location.href = 'register_student.html'; 
+document.getElementById('student').addEventListener('click', () => {
+    window.location.href = 'student.html'; 
 });
 
-document.getElementById('registerInstructor').addEventListener('click', () => {
-    window.location.href = 'register_instructor.html'; 
+document.getElementById('Instructor').addEventListener('click', () => {
+    window.location.href = 'instructor.html'; 
 });

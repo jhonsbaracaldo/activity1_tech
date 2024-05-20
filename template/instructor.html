@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/instrcutor.css">
   <title>Registrar Instructor</title>
 </head>
 <body>
@@ -14,16 +15,25 @@
       <label for="lastname">Apellido</label>
       <input type="text" id="lastname" required>
       <label for="cursos">Curso que va a dictar</label>
-      <select id="cursos" required></select>
+      <input type="text" id="cursos" required> <!-- Cambiado el ID de este campo -->
       <button type="submit">Registrar</button>
+      
     </form>
-  </section>
 
+  </section>
+  <section>
+    <!-- Agrega el event listener para mostrar la lista de cursos -->
+    <button id="mostrarListaCursos">Mostrar Lista de Cursos</button>
+    <ul id="listaCursos"></ul>
+
+  </section>
+  
   <section>
     <h1>Lista de Instructores</h1>
-    <div id="instructorList"></div>
+    <div id="output"></div> <!-- Selecciona otro ID para evitar duplicados -->
   </section>
 
+  <!-- Importa el archivo JavaScript -->
   <script type="module" src="../service/instructoregister.js"></script>
 </body>
 </html>
