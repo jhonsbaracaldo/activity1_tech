@@ -4,33 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/student.css">
-
   <title>Student</title>
 </head>
 <body>
-  <form id="Formstudent">
-    <h1>Registro Estudiante</h1>
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required><br>
+  <section>
+    <form id="Formstudent">
+      <h1>Registro Estudiante</h1>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required><br>
 
-    <label for="lastname">Apellido:</label>
-    <input type="text" id="lastname" name="lastname" required><br>
+      <label for="lastname">Apellido:</label>
+      <input type="text" id="lastname" name="lastname" required><br>
 
-    <label for="cursos">Cursos:</label>
-    <input type="text" id="cursos" name="cursos" required><br>
+      <label for="cursos">Cursos:</label>
+      <select id="cursos" name="cursos" required></select><br>
+
+      <button type="submit">Registrar</button>
+    </form>
 
 
+  <section>
+    <h1>Lista de Cursos</h1>
+    <ul id="listaCursos"></ul>
+  </section>
+</section>
 
-    <button type="submit">Registrar</button>
-  </form>
 
   <div id="output"></div>
 
   <!-- Scripts para importar los archivos JavaScript externos -->
-  <script src="../interactive/people.js" type="module"></script>
+  <script src="../interactive/instructor.js" type="module"></script>
   <script src="../interactive/student.js" type="module"></script>
- 
+  <script src="../interactive/course.js" type="module"></script>
   <script src="../service/studentregister.js" type="module"></script>
-
 </body>
 </html>

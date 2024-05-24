@@ -10,6 +10,7 @@
   <section>
     <form id="FormInstructor">
       <h1>Registrar Instructor</h1>
+      <img src="../imagen/instructor.png" alt="imagen">
       <label for="name">Nombre</label>
       <input type="text" id="name" required>
       <label for="lastname">Apellido</label>
@@ -20,19 +21,21 @@
       
     </form>
 
-  </section>
+ 
+  
   <section>
     <!-- Agrega el event listener para mostrar la lista de cursos -->
-    <button id="mostrarListaCursos">Mostrar Lista de Cursos</button>
+    <button id="mostrarCursosButton">Mostrar Lista de Cursos</button>
     <ul id="listaCursos"></ul>
 
   </section>
-  
+
   <section>
     <h1>Lista de Instructores</h1>
     <div id="output"></div> <!-- Selecciona otro ID para evitar duplicados -->
-  </section>
 
+  </section>
+</section>
   <!-- Importa el archivo JavaScript -->
   <script type="module" src="../service/instructoregister.js"></script>
 </body>

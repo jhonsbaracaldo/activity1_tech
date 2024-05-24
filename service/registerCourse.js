@@ -1,4 +1,6 @@
 import Course from '../interactive/course.js';
+// Eliminar esta línea duplicada
+// import Course from './course.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const coleccionCursos = JSON.parse(localStorage.getItem('cursos')) || [];
@@ -20,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarColeccion(); // Actualizamos la visualización de la colección
 
         document.getElementById('formulario').reset();
-
     });
 
     function mostrarColeccion() {
@@ -33,26 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // Obtener la lista de cursos al cargar la página
-        obtenerListaCursos();
-
-        document.getElementById('FormInstructor').addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const lastname = document.getElementById('lastname').value;
-            const cursoSeleccionado = document.getElementById('cursos').value; // Asegúrate de que el ID sea correcto
-            let instructor;
-
-            // Crear una instancia del instructor
-            instructor = new Instructor(name, lastname, cursoSeleccionado);
-
-            if (instructor) {
-                // Mostrar la información del instructor
-                displayOutput(name, lastname, cursoSeleccionado);
-            }
-        });
-    });
-
+    // Mostrar los cursos al cargar la página
+    mostrarColeccion();
 });

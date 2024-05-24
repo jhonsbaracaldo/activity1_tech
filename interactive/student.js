@@ -2,12 +2,12 @@ import people from './people.js';
 
 
 export default class student extends people {
-  constructor(name, lastname, document, cursosa) {
+  constructor(name, lastname, document, instructor) {
     super(name, lastname, document); 
-    this.cursosa = cursosa;
+    this.instructor = instructor;
   }
 
   getCurso1() {
-    return this.cursosa;
+    return this.instructor;
   }
 }
